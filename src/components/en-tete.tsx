@@ -21,7 +21,7 @@ function En_tete() {
         </div>
         <div className={styles.download}>
           <a href="/accueil/EVAN QUINCHON CV 2023.pdf" download>
-            <img src="/accueil/download.png" />
+            <img src="./accueil/download.png" />
             download
           </a>
         </div>
