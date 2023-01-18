@@ -6,7 +6,6 @@ import Footer from "../components/footer";
 import Aboutme from "../components/aboutme";
 import Comp from "../components/comp";
 import Project from "../components/project-vue";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,7 +19,7 @@ export default function Home() {
           content="Evan Quinchon, quinch_e@etna-alternance.net"
         />
         <title>Quinchon Evan - Portfolio</title>
-        <Link rel="icon" href="./accueil/panda.ico" />
+        <link rel="icon" href="./accueil/panda.ico" />
       </Head>
       <Header />
       <En_tete />
