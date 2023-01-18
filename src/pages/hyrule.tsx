@@ -7,14 +7,14 @@ function HyrulePage() {
     <>
       <Head>
         <title>Quinchon Evan - Portfolio</title>
-        <link rel="icon" href="/accueil/panda.ico" />
+        <link rel="icon" href="./accueil/panda.ico" />
       </Head>
       <Header />
       <main>
         <h1 className={styles.titre}>Hyrule Castle</h1>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
-            <img src="/projet/hyrule/zelda_accueil.png" />
+            <img src="./projet/hyrule/zelda_accueil.png" />
           </div>
           <div className={styles.right}>
             <h3>Page de Lancement du Jeu</h3>
@@ -41,7 +41,7 @@ function HyrulePage() {
             </p>
           </div>
           <div className={styles.right}>
-            <img src="/projet/hyrule/zelda_game.png" />
+            <img src="./projet/hyrule/zelda_game.png" />
           </div>
         </div>
       </main>
