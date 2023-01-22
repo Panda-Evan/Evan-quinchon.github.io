@@ -16,7 +16,7 @@ function Aboutme() {
         toujours plus.
       </p>
       <a href="/about">
-        <button>En savoir plus</button>
+        <button className={styles.button}>En savoir plus</button>
       </a>
     </div>
   );

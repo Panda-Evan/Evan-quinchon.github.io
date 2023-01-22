@@ -20,11 +20,15 @@ function En_tete() {
             persuadé que je pourrais apporter une valeur ajoutée à votre équipe.
           </p>
         </div>
-        <div className={styles.download}>
-          <a href="/accueil/EVAN QUINCHON CV 2023.pdf" download>
-            <img src="/accueil/download.png" />
-            Download CV
-          </a>
+        <div>
+          <button className={styles.download}>
+            <span>
+              <a href="/accueil/EVAN QUINCHON CV 2023.pdf" download>
+                <img src="/accueil/download.png" />
+                Download CV
+              </a>
+            </span>
+          </button>
         </div>
       </div>
       <img className={styles.svg} src="/wave/wave.svg" />

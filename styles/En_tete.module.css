@@ -77,24 +77,88 @@
 }
 
 .download {
-  margin-left: 30%;
-  width: 200px;
   margin-top: 20px;
-  padding: 5px 10px 5px 10px;
-  background: rgb(195, 195, 195);
-  border-radius: 20px;
-  border: solid;
+  width: 130px;
+  height: 40px;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
 }
 
-.download:hover {
-  background: rgb(94, 94, 94);
-  cursor: pointer;
+.download {
+  background: white;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
 }
 
 .download img {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-.download a {
-  text-decoration: none;
+.download span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.download:before,
+.download:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: black;
+  transition: all 1.5s ease;
+}
+.download:before {
+  height: 0%;
+  width: 2px;
+}
+.download:after {
+  width: 0%;
+  height: 2px;
+}
+.download:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.download:hover:before {
+  height: 100%;
+}
+.download:hover:after {
+  width: 100%;
+}
+.download span:before,
+.download span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: black;
+  transition: all 1.5s ease;
+}
+.download span:before {
+  width: 2px;
+  height: 0%;
+}
+.download span:after {
+  width: 0%;
+  height: 2px;
+}
+.download span:hover:before {
+  height: 100%;
+}
+.download span:hover:after {
+  width: 100%;
 }

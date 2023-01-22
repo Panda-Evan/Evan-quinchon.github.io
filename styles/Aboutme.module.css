@@ -14,23 +14,72 @@
     font-size: 1.4rem;
   }
   
-  .div button {
-    font-size: 1.3rem;
-    border: none;
-    background: black;
+  .button {
     margin-left: 20%;
     margin-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: white;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-radius: 20px;
+    padding: 15px 75px;
+    color: black;
+    border-radius: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
   }
   
-  .div button:hover {
-    background: rgb(146, 146, 146);
+  .button {
+    border: none;
+    background: black;
+    color: #fff;
+    overflow: hidden;
+  }
+  .button:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  .button:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(215, 215, 215);
+    animation: shiny 5s ease-in-out infinite;
+  }
+  .button:hover {
+    background: rgb(211, 211, 211);
     color: black;
-    cursor: pointer;
+  }
+  .button:active {
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3),
+      -4px -4px 6px 0 rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px 0 rgba(0, 0, 0, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes shiny {
+    0% {
+      -webkit-transform: scale(0) rotate(45deg);
+      opacity: 0;
+    }
+    80% {
+      -webkit-transform: scale(0) rotate(45deg);
+      opacity: 0.5;
+    }
+    81% {
+      -webkit-transform: scale(4) rotate(45deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(50) rotate(45deg);
+      opacity: 0;
+    }
   }
   
