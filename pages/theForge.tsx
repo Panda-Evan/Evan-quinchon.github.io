@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import Header from "../components/header_page";
 import styles from "../styles/Projet.module.css";
 
+// page project The Forge
 function TheForgePage() {
   return (
     <>

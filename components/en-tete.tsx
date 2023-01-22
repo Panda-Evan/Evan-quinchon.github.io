@@ -1,5 +1,6 @@
 import styles from "../styles/En_tete.module.css";
 
+// the presentation header
 function En_tete() {
   return (
     <div className={styles.div}>
@@ -14,15 +15,15 @@ function En_tete() {
         <br />
         <div className={styles.intro}>
           <p>
-            Je suis une personne motivé et dynamique, toujours prêt à relever
+            Je suis une personne motivée et dynamique, toujours prête à relever
             de nouveaux défis et à apprendre de nouvelles choses. Je suis
             persuadé que je pourrais apporter une valeur ajoutée à votre équipe.
           </p>
         </div>
         <div className={styles.download}>
           <a href="/accueil/EVAN QUINCHON CV 2023.pdf" download>
-            <img src="./accueil/download.png" />
-            download
+            <img src="/accueil/download.png" />
+            Download CV
           </a>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import styles from "../styles/Aboutme.module.css";
 
+// About me on the home
 function Aboutme() {
   return (
     <div className={styles.div} id="about">

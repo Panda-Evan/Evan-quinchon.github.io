@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "../styles/test.module.scss";
 
+// definition of images and information to display
 const slides = [
   {
     title: "The Forge",
     image: "/projet/theForge/theForge.png",
-    lien: "/theForge"
+    lien: "/theForge",
   },
   {
     title: "Hyrules Castle",
     image: "/projet/hyrule/hyrule.jpg",
-    lien: "/hyrule"
+    lien: "/hyrule",
   },
 ];
 
+// function to retrieve the mouse position and animate the image
 function useTilt(active: unknown) {
   const ref = React.useRef(null);
 
@@ -23,24 +25,22 @@ function useTilt(active: unknown) {
     }
 
     const state = {
-      rect: new DOMRect,
+      rect: new DOMRect(),
       mouseX: 0,
       mouseY: 0,
     };
 
     let el: any = ref.current;
 
-    const handleMouseMove = (e: { clientX: any; clientY: any; }) => {
+    const handleMouseMove = (e: { clientX: any; clientY: any }) => {
       if (!el) {
         return;
       }
-      
-        state.rect = el.getBoundingClientRect();
+
+      state.rect = el.getBoundingClientRect();
       
       state.mouseX = e.clientX;
       state.mouseY = e.clientY;
-
-      
       const px = (state.mouseX - state.rect.left) / state.rect.width;
       const py = (state.mouseY - state.rect.top) / state.rect.height;
 
@@ -62,6 +62,7 @@ const initialState = {
   slideIndex: 0,
 };
 
+// button function to go on the other slide
 const slidesReducer = (state: any, event: any) => {
   if (event.type === "NEXT") {
     return {
@@ -78,6 +79,7 @@ const slidesReducer = (state: any, event: any) => {
   }
 };
 
+// function to show slides
 function Slide({ slide, offset }: any) {
   const active = offset === 0 ? true : null;
   const ref = useTilt(active);
@@ -108,7 +110,8 @@ function Slide({ slide, offset }: any) {
   );
 }
 
-export default function App() {
+// carousel complete
+export default function Carrousel() {
   const [state, dispatch] = React.useReducer(slidesReducer, initialState);
 
   return (

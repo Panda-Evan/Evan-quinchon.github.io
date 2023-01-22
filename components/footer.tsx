@@ -1,5 +1,6 @@
 import styles from "../styles/Footer.module.css";
 
+// footer of all page
 function Footer() {
   return (
     <div>

@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/Header.module.css";
 
+// header of home
 function Header() {
+
+  // function to scroll to the top
   const [atTop, setAtTop] = useState(true);
 
   useEffect(() => {
@@ -38,7 +41,7 @@ function Header() {
         </div>
       </nav>
       <div>
-        {!atTop && (
+        {!atTop && ( // appears when the scroll bar is not fully
           <div>
             <a href="#top">
               <img className={styles.top} src="/accueil/top.ico" />

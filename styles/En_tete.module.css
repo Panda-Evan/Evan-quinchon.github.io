@@ -1,6 +1,6 @@
 .div {
   text-align: center;
-  font-family: "AvenirNext", sans-serif !important;
+  font-family: "AvenirNext", sans-serif ;
   background: rgb(245, 245, 245);
 }
 
@@ -19,7 +19,7 @@
 
 .div_right text {
   font-size: 4rem;
-  font-family: "CanelaDeck", serif !important;
+  font-family: "CanelaDeck", serif ;
 }
 
 .div_right .intro {
@@ -83,6 +83,7 @@
   padding: 5px 10px 5px 10px;
   background: rgb(195, 195, 195);
   border-radius: 20px;
+  border: solid;
 }
 
 .download:hover {
