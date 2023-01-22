@@ -1,10 +1,11 @@
 .div {
   background: white;
+  text-align: center;
 }
 
-.div text {
+.div .text {
   font-size: 3rem;
-  margin-left: 50px;
+  padding-bottom: 50px;
 }
 
 .projet {

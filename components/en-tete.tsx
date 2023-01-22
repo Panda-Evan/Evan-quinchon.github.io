@@ -14,7 +14,7 @@ function En_tete() {
         <br />
         <div className={styles.intro}>
           <p>
-            Je suis une personne motivée et dynamique, toujours prête à relever
+            Je suis une personne motivé et dynamique, toujours prêt à relever
             de nouveaux défis et à apprendre de nouvelles choses. Je suis
             persuadé que je pourrais apporter une valeur ajoutée à votre équipe.
           </p>

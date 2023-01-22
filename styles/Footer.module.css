@@ -1,28 +1,47 @@
-.div_footer, .div_contact{
-    background: rgb(245, 245, 245);
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    padding-top: 50px;
-
+.div_contact ,.div_footer{
+  background: rgb(245, 245, 245);
+  width: 100%;
 }
 
-.div_footer a img {
-    width: 20px;
+.div_contact {
+  display: flex;
+}
+
+.div_right, .div_left{
+  width: 46%;
+  text-align: center;
+}
+
+.div_left {
+  padding-left: 2%;
+  padding-bottom: 50px;
+  float: inline-start;
+}
+
+.div_right {
+  float: inline-end;
+  margin-right: 2%;
+  padding-bottom: 50px;
+}
+
+.div_right a img {
+    width: 40px;
     height: auto;
     margin: 10px;
     background: white;
     border-radius: 50%;
 }
 
+.div_left a {
+  display: grid;
+}
+
+.div_footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .svg {
     position: relative;
     bottom: -5px;
-  }
-
-  .div_contact a {
-    border-radius: 50px;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
   }

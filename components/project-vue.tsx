@@ -4,7 +4,10 @@ import Carrousel from "./carrousel";
 function Project() {
   return (
     <div className={styles.div} id="project">
-      <text>Mes Projets</text>
+      <div className={styles.text}>
+        <text>Mes Projets</text>
+      </div>
+
       <Carrousel />
     </div>
   );
