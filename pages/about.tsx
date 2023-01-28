@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header_page from "../components/header_page";
+import Header from "../components/header";
 import styles from "../styles/About.module.css";
 
 // page about
@@ -10,7 +10,7 @@ function About() {
         <title>Quinchon Evan - Portfolio</title>
         <link rel="icon" href="/accueil/panda.ico" />
       </Head>
-      <Header_page />
+      <Header />
       <div className={styles.div}>
         <div className={styles.text}>
           <text>A Propos</text>
@@ -22,7 +22,7 @@ function About() {
               <p>
                 2022, j'ai été accepté à l'
                 <a href="https://etna.io/">
-                  <b>ETNA</b> <img src="./accueil/lien.png" />
+                  <b>ETNA</b> <img src="/accueil/lien.png" />
                 </a>
                 . Actuellement je me pationne sur le <b>dev front end</b>, mais
                 j'aimerai toujour aussi etre{" "}
@@ -54,11 +54,11 @@ function About() {
                 j'eu envie de commencer à <b>créer un jeu</b>. J'ai commencer
                 avec des <b>petits jeux</b> comme{" "}
                 <a href="https://www.google.com/fbx?fbx=snake_arcade">
-                  snake <img src="./accueil/lien.png" />
+                  snake <img src="/accueil/lien.png" />
                 </a>
                 , ou le{" "}
                 <a href="http://www.mathsaharry.com/fort/fort_harry.htm">
-                  jeu des batôns <img src="./accueil/lien.png" />
+                  jeu des batôns <img src="/accueil/lien.png" />
                 </a>
                 .
               </p>
@@ -104,7 +104,7 @@ function About() {
                 fonctionnais. Je suis donc passé directement au projet final
                 visé qui était un{" "}
                 <a href="https://www.google.com/fbx?fbx=snake_arcade">
-                  snake <img src="./accueil/lien.png" />
+                  snake <img src="/accueil/lien.png" />
                 </a>
               </p>
             </div>

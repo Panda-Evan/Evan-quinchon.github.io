@@ -16,7 +16,7 @@ function Footer() {
           <a href="https://www.linkedin.com/in/evan-quinchon/" target="_blank">
             <img src="/footer/linkedin-logo.png" />
           </a>
-          <a target="_blank">
+          <a href="https://github.com/Panda-Evan" target="_blank">
             <img src="/footer/github-logo.png" />
           </a>
         </div>

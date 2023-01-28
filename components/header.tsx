@@ -3,16 +3,15 @@ import styles from "../styles/Header.module.css";
 
 // header of home
 function Header() {
-
   // function to scroll to the top
   const [atTop, setAtTop] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
-        setAtTop(true)
+        setAtTop(true);
       } else {
-        setAtTop(false)
+        setAtTop(false);
       }
     };
 
@@ -24,21 +23,27 @@ function Header() {
 
   return (
     <header>
-      <nav className={styles.nav} id="top">
-        <div className={styles.divNavbar}>
-          <a href="#about">
-            <button>A propos</button>
-          </a>
-          <a href="#competence">
-            <button>Compétences</button>
-          </a>
-          <a href="#project">
-            <button>Projets</button>
-          </a>
-          <a href="#contact">
-            <button>Contact</button>
-          </a>
-        </div>
+      <input
+        className={styles.navbar}
+        type="checkbox"
+        id="navbar"
+      />
+      <label htmlFor="navbar"></label>
+      <nav className={styles.nav}>
+        <ul>
+          <li>
+            <a href="https://panda-evan.github.io/#about">A propos</a>
+          </li>
+          <li>
+            <a href="https://panda-evan.github.io/#competence">Compétences</a>
+          </li>
+          <li>
+            <a href="https://panda-evan.github.io/#project">Mes Projets</a>
+          </li>
+          <li>
+            <a href="https://panda-evan.github.io/#contact">Contactez Moi</a>
+          </li>
+        </ul>
       </nav>
       <div>
         {!atTop && ( // appears when the scroll bar is not fully
