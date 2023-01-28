@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/footer";
-import Header from "../components/header_page";
+import Header from "../components/header";
 import styles from "../styles/Projet.module.css";
 
 // page project The Forge
