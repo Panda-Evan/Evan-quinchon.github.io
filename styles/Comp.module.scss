@@ -679,7 +679,7 @@
 	}
 
 	&:hover {
-		transform: scale(1.5)
+		@include rotate;
 	}
 
 	.circle {
@@ -781,7 +781,7 @@
 	}
 
 	&:hover {
-		transform: scale(1.5)
+		@include rotate;
 	}
 
 	.circle {
