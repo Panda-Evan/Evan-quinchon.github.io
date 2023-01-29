@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import styles from "../styles/Projet.module.css";
 
@@ -11,41 +12,46 @@ function HyrulePage() {
         <link rel="icon" href="/accueil/panda.ico" />
       </Head>
       <Header />
-      <main>
+      <main className={styles.main}>
         <h1 className={styles.titre}>Hyrule Castle</h1>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
-            <img src="/projet/hyrule/zelda_accueil.png" />
+            <img
+              className={styles.image_theForge}
+              src="/projet/hyrule/zelda_accueil.png"
+            />
           </div>
           <div className={styles.right}>
             <h3>Page de Lancement du Jeu</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-              eligendi ea iste voluptate fugiat nostrum dolorum, debitis eius
-              alias ullam consectetur beatae, odit, quia modi aut placeat
-              molestiae error provident eveniet? Ex sunt quasi, cupiditate
-              consectetur natus veniam ducimus amet ea hic culpa? Quasi dolorum
-              odio ad suscipit accusamus vero.
+              Le titre est fait grace à une fonction typescript qui transforme
+              le texte en ascii suivant des paramètres. Le menu est fait de
+              manière à choisir en entrant 1 ou 2 suivant ce qu'on souhaite
+              faire.
             </p>
           </div>
         </div>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
-            <h3>Page de Lancement du Jeu</h3>
+            <h3>Page de Jeu</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-              eligendi ea iste voluptate fugiat nostrum dolorum, debitis eius
-              alias ullam consectetur beatae, odit, quia modi aut placeat
-              molestiae error provident eveniet? Ex sunt quasi, cupiditate
-              consectetur natus veniam ducimus amet ea hic culpa? Quasi dolorum
-              odio ad suscipit accusamus vero.
+              Lorsque l'on choissit new game, on peut choisir le nombre d'étage
+              à parcourir avant la fin du jeu. On choissit aussi la difficulté
+              la difficulté qui augmente la vie et la force des ennemies. On en
+              vient donc à notre image qui est le commencement du jeu. Le héros
+              est choissit aléatoirement tout comme les ennemies. Tout les 10
+              combats, le héros affrontera un boss.
             </p>
           </div>
           <div className={styles.right}>
-            <img src="/projet/hyrule/zelda_game.png" />
+            <img
+              className={styles.image_theForge}
+              src="/projet/hyrule/zelda_game.png"
+            />
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

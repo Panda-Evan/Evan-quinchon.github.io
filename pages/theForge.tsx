@@ -12,38 +12,66 @@ function TheForgePage() {
         <link rel="icon" href="/accueil/panda.ico" />
       </Head>
       <Header />
-      <main>
+      <main className={styles.main}>
         <h1 className={styles.titre}>Hyrule Castle</h1>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
-            <img className={styles.image_theForge} src="/projet/theForge/theForge.png" />
+            <img
+              className={styles.image_theForge}
+              src="/projet/theForge/theForge.png"
+            />
           </div>
           <div className={styles.right}>
-            <h3>Page de Lancement du Jeu</h3>
+            <h3>Page d'accueil</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-              eligendi ea iste voluptate fugiat nostrum dolorum, debitis eius
-              alias ullam consectetur beatae, odit, quia modi aut placeat
-              molestiae error provident eveniet? Ex sunt quasi, cupiditate
-              consectetur natus veniam ducimus amet ea hic culpa? Quasi dolorum
-              odio ad suscipit accusamus vero.
+              La page d'accueil possède le titre du site ainsi qu'une
+              description et un gif dans une image. La barre de navigation est
+              classique mais permet de savoir où l'on se situe sur le site grace
+              au active.
             </p>
           </div>
         </div>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
-            <h3>Page de Lancement du Jeu</h3>
+            <h3>Page du shop</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-              eligendi ea iste voluptate fugiat nostrum dolorum, debitis eius
-              alias ullam consectetur beatae, odit, quia modi aut placeat
-              molestiae error provident eveniet? Ex sunt quasi, cupiditate
-              consectetur natus veniam ducimus amet ea hic culpa? Quasi dolorum
-              odio ad suscipit accusamus vero.
+              La page du shop est relié à une database permettant de récupérer les articles mis en ventes sur le site ranger par catégorie.
+              Les 4 images du haut permettent de se déplacer suivant le theme voulu.
             </p>
           </div>
           <div className={styles.right}>
-            <img className={styles.image_theForge} src="/projet/theForge/theForge_shop.png" />
+            <img
+              className={styles.image_theForge}
+              src="/projet/theForge/theForge_shop.png"
+            />
+          </div>
+        </div>
+        <div className={styles.project_wrapper}>
+          <div className={styles.left}>
+            <img
+              className={styles.image_theForge}
+              src="/projet/theForge/theForge_pay.png"
+            />
+          </div>
+          <div className={styles.right}>
+            <h3>Page de payement</h3>
+            <p>
+              La page permet de récupérer les articles commander dans le shop et récupère les données.
+            </p>
+          </div>
+        </div>
+        <div className={styles.project_wrapper}>
+          <div className={styles.left}>
+            <h3>Page de connexion</h3>
+            <p>
+              La page permet de se connecter ou de se créer un compte suivant si l'on ppossède un compte ou non.
+            </p>
+          </div>
+          <div className={styles.right}>
+            <img
+              className={styles.image_theForge}
+              src="/projet/theForge/theForge_account.png"
+            />
           </div>
         </div>
       </main>

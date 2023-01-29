@@ -30,14 +30,12 @@
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
-}
-
-.button {
   border: none;
   background: black;
   color: #fff;
   overflow: hidden;
 }
+
 .button:hover {
   text-decoration: none;
   color: #fff;
@@ -80,5 +78,29 @@
   100% {
     -webkit-transform: scale(50) rotate(45deg);
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .div {
+    margin: 50px 30px;
+    text-align: center;
+  }
+
+  .div text {
+    font-size: 2rem;
+  }
+  
+  .div p {
+    margin: 50px 0px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .button {
+    margin: 10px 10%;
+    align-items: center;
+    padding: 10px 20px;
   }
 }

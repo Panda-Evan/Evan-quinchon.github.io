@@ -28,12 +28,13 @@
 
 .slides {
   display: grid;
-  > .slide {
-    
+
+  >.slide {
+
     grid-area: 1 / -1;
   }
 
-  > button {
+  >button {
     appearance: none;
     background: transparent;
     border: none;
@@ -58,6 +59,7 @@
     &:first-child {
       left: 30%;
     }
+
     &:last-child {
       right: 30%;
     }
@@ -77,8 +79,7 @@
   align-content: center;
 
   transform-style: preserve-3d;
-  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-    rotateY(calc(-45deg * var(--dir)));
+  transform: perspective(1000px) translateX(calc(100% * var(--offset))) rotateY(calc(-45deg * var(--dir)));
 }
 
 .slideContentInner {
@@ -90,7 +91,7 @@
 
   .slideSubtitle,
   .slideTitle {
-    font-size: 2rem;
+    font-size: 5vh;
     font-weight: normal;
     letter-spacing: 0.2ch;
     text-transform: uppercase;
@@ -124,8 +125,28 @@
 
     &:hover {
       transition: none;
-      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
-        rotateX(calc(var(--y) * -45deg));
+      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slides {
+    >button {
+    position: absolute;
+    font-size: 50px;
+    top: 10%;
+    transition: opacity 0.3s;
+    opacity: 0.7;
+    z-index: 5;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
     }
   }
 }

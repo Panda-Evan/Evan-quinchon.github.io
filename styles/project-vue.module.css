@@ -20,3 +20,9 @@
     border:ridge 5px;
     border-image: repeating-linear-gradient(30deg, #000000, #2f2f2f 20px) 60;
 }
+
+@media screen and (max-width: 600px) {
+  .div .text {
+    font-size: 2rem;
+  }
+}

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import styles from "../styles/About.module.css";
 
@@ -111,6 +112,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

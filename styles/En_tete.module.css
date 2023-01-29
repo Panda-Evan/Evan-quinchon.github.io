@@ -163,3 +163,32 @@
 .download span:hover:after {
   width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+
+  .div {
+    padding-top: 120px;
+  }
+
+  .div_left, .div_right {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  .div_left img {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .div_right text {
+    font-size: 2rem;
+    font-family: "CanelaDeck", serif ;
+  }
+
+  .div_right .intro {
+    font-size: 0.8rem;
+    margin: 10px 40px;
+    position: relative;
+}
+}

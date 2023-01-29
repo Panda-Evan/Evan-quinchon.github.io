@@ -1,33 +1,13 @@
-.divNavbar {
-    display: flex;
-    margin-top: 50px;
-    margin-right: 50px;
-}
-
-.divNavbar button {
-    font-size: 1.2rem;
-    color: black;
-    padding: 15px;
-    border: none;
-    background: none;
-}
-
-.divNavbar button:hover {
-    background: #e5e5e5;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
 .navbar[type="checkbox"]:checked,
-.navbar[type="checkbox"]:not(:checked){
+.navbar[type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 
 .navbar:checked + label,
-.navbar:not(:checked) + label{
+.navbar:not(:checked) + label {
   position: fixed;
   top: 63px;
   right: 75px;
@@ -42,9 +22,9 @@
 
 /* top and down bar */
 .navbar:checked + label:before,
-.navbar:not(:checked) + label:before{
+.navbar:not(:checked) + label:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 30px;
   height: 20px;
   z-index: 20;
@@ -52,18 +32,17 @@
   left: 0;
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
-  transition: border-width 100ms 1500ms ease, 
-              top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), 
-              background-color 200ms ease,
-              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 1500ms ease,
+    top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
+    height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Middle Bar */
 .navbar:checked + label:after,
-.navbar:not(:checked) + label:after{
+.navbar:not(:checked) + label:after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 22px;
   height: 2px;
@@ -72,38 +51,34 @@
   right: 4px;
   background-color: #ffffff;
   margin-top: 1px;
-  transition: width 100ms 1750ms ease, 
-              right 100ms 1750ms ease,
-              margin-top 100ms ease, 
-              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms 1750ms ease, right 100ms 1750ms ease,
+    margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* croos */
-.navbar:checked + label:before{
+.navbar:checked + label:before {
   top: 10px;
   transform: rotate(45deg);
   height: 2px;
   background-color: #000000;
   border-width: 0;
-  transition: border-width 100ms 340ms ease, 
-              top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), 
-              background-color 200ms 500ms ease,
-              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-width 100ms 340ms ease,
+    top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-color 200ms 500ms ease,
+    transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-.navbar:checked + label:after{
+.navbar:checked + label:after {
   width: 30px;
   background-color: #000000;
   margin-top: 0;
   right: 0;
   transform: rotate(-45deg);
-  transition: width 100ms ease,
-              right 100ms ease,  
-              margin-top 100ms 500ms ease, 
-              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease,
+    transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.nav{
+.nav {
   position: fixed;
   top: 33px;
   right: 50px;
@@ -114,22 +89,36 @@
   margin: 0;
   z-index: 11;
   overflow: hidden;
-  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
   background-color: #010101;
   animation: border-transform 7s linear infinite;
-  transition:
-              transform 250ms 1100ms ease,
-              width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 250ms 1100ms ease,
+    width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
+    height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-@keyframes border-transform{
-    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
-  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
-  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
-  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
-  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
-  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
-  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
 }
 
 /*Bubble link*/
@@ -142,7 +131,7 @@
   display: none;
 }
 
-.nav ul{
+.nav ul {
   opacity: 100%;
   position: absolute;
   top: 50%;
@@ -157,7 +146,7 @@
   list-style: none;
 }
 
-.nav ul li{
+.nav ul li {
   position: relative;
   display: block;
   width: 100%;
@@ -171,20 +160,20 @@
   transform: translateY(30px);
   transition: all 250ms linear;
 }
-.nav ul li:nth-child(1){
+.nav ul li:nth-child(1) {
   transition-delay: 200ms;
 }
-.nav ul li:nth-child(2){
+.nav ul li:nth-child(2) {
   transition-delay: 150ms;
 }
-.nav ul li:nth-child(3){
+.nav ul li:nth-child(3) {
   transition-delay: 100ms;
 }
-.nav ul li:nth-child(4){
+.nav ul li:nth-child(4) {
   transition-delay: 50ms;
 }
-.nav ul li a{
-  font-family: 'Montserrat', sans-serif;
+.nav ul li a {
+  font-family: "Montserrat", sans-serif;
   font-size: 9vh;
   text-transform: uppercase;
   line-height: 1.2;
@@ -194,11 +183,11 @@
   color: #ffffff;
   transition: all 250ms linear;
 }
-.nav ul li a:after{
+.nav ul li a:after {
   display: block;
   position: absolute;
   top: 50%;
-  content: '';
+  content: "";
   height: 2vh;
   margin-top: -1vh;
   width: 0;
@@ -208,59 +197,56 @@
   opacity: 0.35;
   transition: width 250ms linear;
 }
-.nav ul li a:hover:after{
+.nav ul li a:hover:after {
   width: 100%;
 }
 
-
-.navbar:checked ~ .nav  ul li {
+.navbar:checked ~ .nav ul li {
   pointer-events: auto;
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
-.navbar:checked ~ .nav ul li:nth-child(1){
+.navbar:checked ~ .nav ul li:nth-child(1) {
   transition-delay: 1000ms;
 }
-.navbar:checked ~ .nav ul li:nth-child(2){
+.navbar:checked ~ .nav ul li:nth-child(2) {
   transition-delay: 1080ms;
 }
-.navbar:checked ~ .nav ul li:nth-child(3){
+.navbar:checked ~ .nav ul li:nth-child(3) {
   transition-delay: 1160ms;
 }
-.navbar:checked ~ .nav ul li:nth-child(4){
+.navbar:checked ~ .nav ul li:nth-child(4) {
   transition-delay: 1240ms;
 }
 
 @media screen and (max-width: 600px) {
   .navbar:checked + label,
-  .navbar:not(:checked) + label{
+  .navbar:not(:checked) + label {
     right: 55px;
   }
-  .nav{
+  .nav {
     right: 30px;
   }
-  .nav ul li a{
-    font-size: 8vh;
+  .nav ul li a {
+    font-size: 5vh;
   }
 }
 
-
 .top {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background: white;
-  }
-  
-  .top:hover {
-    background-color: rgb(142, 142, 142);
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+}
+
+.top:hover {
+  background-color: rgb(142, 142, 142);
+}

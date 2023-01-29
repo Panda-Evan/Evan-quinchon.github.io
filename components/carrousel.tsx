@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/test.module.scss";
+import styles from "../styles/carrousel.module.scss";
 
 // definition of images and information to display
 const slides = [

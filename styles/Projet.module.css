@@ -1,40 +1,93 @@
-.project_wrapper {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    margin: 50px 5%;
+.main {
+  background: white;
+  margin-top: 50px;
 }
 
-.left {
-    width: 45%;
-    float: left;
+.project_wrapper {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: 50px 10%;
 }
 
 .right {
-    float: right;
-    width: 45%;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+  right: 0;
 }
 
-.left h3, .right h3 {
-    font-weight: 100;
-    padding: 30px;
-    font-size: 2rem;
+.left {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+  left: 0;
 }
 
-.left p, .right p {
-    font-size: 1.2rem;
+.left h3,
+.right h3 {
+  font-weight: 100;
+  padding: 30px;
+  font-size: 2rem;
+}
+
+.left p,
+.right p {
+  font-size: 1.2rem;
 }
 
 .titre {
-    padding: 20px;
-    font-weight: 100;
-    font-size: 3rem;
-    text-align: center;
+  padding: 20px;
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .image_theForge {
-    height: auto;
-    max-height: 700px;
-    width: auto;
+  height: auto;
+  max-height: 700px;
+  width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+
+  .main {
+    margin-top: 120px;
+  }
+
+  .project_wrapper {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    padding: 0px 10px;
+    position: sticky;
+    width: 100%;
+    left: 0;
+  }
+
+  .left h3,
+  .right h3 {
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .left p,
+  .right p {
+    font-size: 0.8rem;
+  }
+
+  .titre {
+    font-size: 2rem;
+  }
+
+  .image_theForge {
+    display: none;
+  }
 }
