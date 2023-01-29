@@ -7,11 +7,13 @@ const slides = [
     title: "The Forge",
     image: "/projet/theForge/theForge.png",
     lien: "/theForge",
+    color: "#49B6FF",
   },
   {
     title: "Hyrules Castle",
     image: "/projet/hyrule/hyrule.jpg",
     lien: "/hyrule",
+    color: "rgb(95, 16, 16)",
   },
 ];
 
@@ -38,7 +40,7 @@ function useTilt(active: unknown) {
       }
 
       state.rect = el.getBoundingClientRect();
-      
+
       state.mouseX = e.clientX;
       state.mouseY = e.clientY;
       const px = (state.mouseX - state.rect.left) / state.rect.width;
@@ -83,16 +85,18 @@ const slidesReducer = (state: any, event: any) => {
 function Slide({ slide, offset }: any) {
   const active = offset === 0 ? true : null;
   const ref = useTilt(active);
-  
+
   return (
     <div
       ref={ref}
       className={styles.slide}
       data-active={active}
-      style={{
-        "--offset": offset,
-        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
-      } as React.CSSProperties}
+      style={
+        {
+          "--offset": offset,
+          "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
+        } as React.CSSProperties
+      }
     >
       <a href={slide.lien}>
         <div
@@ -102,7 +106,14 @@ function Slide({ slide, offset }: any) {
           }}
         >
           <div className={styles.slideContentInner}>
-            <h2 className={styles.slideTitle}>{slide.title}</h2>
+            <h2
+              className={styles.slideTitle}
+              style={{
+                color: `${slide.color}`,
+              }}
+            >
+              {slide.title}
+            </h2>
           </div>
         </div>
       </a>
