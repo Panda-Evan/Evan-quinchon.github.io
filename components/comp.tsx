@@ -101,13 +101,13 @@ function Comp() {
                 </a>
                 <a target="_blank" href="https://www.fresh2refresh.com/c-programming/c-basic-program/" className={styles.badge_blue}>
                   <div className={styles.circle}>
-                    <img src="/logo_prog/prog/c.png"/>
+                    <img src="/logo_prog/prog/C.png"/>
                     <div className={styles.ribbon} >C</div>
                   </div>
                 </a>
                 <a target="_blank" href="https://www.lua.org/" className={styles.badge_blue_dark}>
                   <div className={styles.circle}>
-                    <img src="/logo_prog/prog/Lua.png"/>
+                    <img src="/logo_prog/prog/lua.png"/>
                     <div className={styles.ribbon} >Lua</div>
                   </div>
                 </a>
