@@ -166,10 +166,6 @@
 
 @media screen and (max-width: 600px) {
 
-  .div {
-    padding-top: 120px;
-  }
-
   .div_left, .div_right {
     width: 100%;
     margin: 0;
