@@ -25,9 +25,8 @@ function About() {
                 <a href="https://etna.io/">
                   <b>ETNA</b> <img src="/accueil/lien.png" />
                 </a>
-                . Actuellement je me passionne sur le <b>dev front end</b>, mais
-                j'aimerai toujours aussi être{" "}
-                <b>game développer et/ou game designer</b>. Mon but final serait
+                . Actuellement je me passionne sur le <b>dev front end</b>et les{" "}
+                <b>jeux vidéos</b>. Mon but final serait
                 de devenir{" "}
                 <b>chef de projet tout en continuant de programmer</b>.
               </p>

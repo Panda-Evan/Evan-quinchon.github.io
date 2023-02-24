@@ -6,7 +6,7 @@ function Aboutme() {
     <div className={styles.div} id="about">
       <text>A propos</text>
       <p>
-        Développeur passionné de jeux vidéo, je suis actuellement en 1ère année
+        Développeur passionné de Front End et de jeux vidéo, je suis actuellement en 1ère année
         à l’ETNA.
         <br />
         <br />
