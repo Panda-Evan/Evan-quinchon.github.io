@@ -26,8 +26,8 @@ function TheForgePage() {
             <p>
               La page d'accueil possède le titre du site ainsi qu'une
               description et un gif dans une image. La barre de navigation est
-              classique mais permet de savoir où l'on se situe sur le site grace
-              au active.
+              classique mais permet de savoir où l'on se situe sur le site grâce
+              aux actives.
             </p>
           </div>
         </div>
@@ -35,8 +35,8 @@ function TheForgePage() {
           <div className={styles.left}>
             <h3>Page du shop</h3>
             <p>
-              La page du shop est relié à une database permettant de récupérer les articles mis en ventes sur le site ranger par catégorie.
-              Les 4 images du haut permettent de se déplacer suivant le theme voulu.
+              La page du shop est reliée à une database permettant de récupérer les articles mis en vente sur le site rangé par catégorie.
+              Les 4 images du haut permettent de se déplacer suivant le thème voulu.
             </p>
           </div>
           <div className={styles.right}>
@@ -56,7 +56,7 @@ function TheForgePage() {
           <div className={styles.right}>
             <h3>Page de payement</h3>
             <p>
-              La page permet de récupérer les articles commander dans le shop et récupère les données.
+              La page permet de récupérer les articles commandés dans le shop et récupère les données.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ function TheForgePage() {
           <div className={styles.left}>
             <h3>Page de connexion</h3>
             <p>
-              La page permet de se connecter ou de se créer un compte suivant si l'on ppossède un compte ou non.
+              La page permet de se connecter ou de se créer un compte suivant si l'on possède un compte ou non.
             </p>
           </div>
           <div className={styles.right}>

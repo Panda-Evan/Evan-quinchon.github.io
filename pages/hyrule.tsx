@@ -24,9 +24,9 @@ function HyrulePage() {
           <div className={styles.right}>
             <h3>Page de Lancement du Jeu</h3>
             <p>
-              Le titre est fait grace à une fonction typescript qui transforme
+              Le titre est fait grâce à une fonction typescript qui transforme
               le texte en ascii suivant des paramètres. Le menu est fait de
-              manière à choisir en entrant 1 ou 2 suivant ce qu'on souhaite
+              manière à choisir en entrant 1 ou 2 suivants ce qu'on souhaite
               faire.
             </p>
           </div>
@@ -35,11 +35,11 @@ function HyrulePage() {
           <div className={styles.left}>
             <h3>Page de Jeu</h3>
             <p>
-              Lorsque l'on choissit new game, on peut choisir le nombre d'étage
-              à parcourir avant la fin du jeu. On choissit aussi la difficulté
-              la difficulté qui augmente la vie et la force des ennemies. On en
+              Lorsque l'on choisit new game, on peut choisir le nombre d'étages
+              à parcourir avant la fin du jeu. On choisit aussi la difficulté
+              qui augmente la vie et la force des ennemies. On en
               vient donc à notre image qui est le commencement du jeu. Le héros
-              est choissit aléatoirement tout comme les ennemies. Tout les 10
+              est choisi aléatoirement tout comme les ennemies. Tous les 10
               combats, le héros affrontera un boss.
             </p>
           </div>

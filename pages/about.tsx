@@ -25,9 +25,9 @@ function About() {
                 <a href="https://etna.io/">
                   <b>ETNA</b> <img src="/accueil/lien.png" />
                 </a>
-                . Actuellement je me pationne sur le <b>dev front end</b>, mais
-                j'aimerai toujour aussi etre{" "}
-                <b>game developper et/ou game designer</b>. Mon but final serait
+                . Actuellement je me passionne sur le <b>dev front end</b>, mais
+                j'aimerai toujours aussi être{" "}
+                <b>game développer et/ou game designer</b>. Mon but final serait
                 de devenir{" "}
                 <b>chef de projet tout en continuant de programmer</b>.
               </p>
@@ -37,11 +37,11 @@ function About() {
             <div className={styles.content}>
               <h2>2020-2021</h2>
               <p>
-                2020, mon entré en 1ère avec comme option{" "}
-                <b>NSI, Maths, Physique</b>. On apprenais le coté <b>logique</b>{" "}
+                2020, l'entrée en première avec comme option{" "}
+                <b>NSI, Maths, Physique</b>. On apprenait le côté <b>logique</b>{" "}
                 et <b>pratique</b> du numérique en <b>NSI</b>. Suivis par de
-                l'apprentisage en <b>python</b>, dont j'étais dejà avancé. Pour
-                finir sur du <b>HTML</b> avec <b>CSS</b>. A ce moment j'était
+                l'apprentissage en <b>python</b>, dont j'étais déjà avancé. Pour
+                finir sur du <b>HTML</b> avec <b>CSS</b>. A ce moment j'étais
                 plus sur la <b>programmation</b> de jeu que de site.
               </p>
             </div>
@@ -52,14 +52,14 @@ function About() {
               <p>
                 Sortons des cours avec mon passage en 2nd, je me documentai
                 toujours plus sur le <b>python</b>. C'est aussi à ce moment que
-                j'eu envie de commencer à <b>créer un jeu</b>. J'ai commencer
+                j'eus envie de commencer à <b>créer un jeu</b>. J'ai commencé
                 avec des <b>petits jeux</b> comme{" "}
                 <a href="https://www.google.com/fbx?fbx=snake_arcade">
-                  snake <img src="/accueil/lien.png" />
+                  Snake <img src="/accueil/lien.png" />
                 </a>
                 , ou le{" "}
                 <a href="http://www.mathsaharry.com/fort/fort_harry.htm">
-                  jeu des batôns <img src="/accueil/lien.png" />
+                  jeu des bâtons <img src="/accueil/lien.png" />
                 </a>
                 .
               </p>
@@ -72,11 +72,11 @@ function About() {
                 Après avoir été forcé de redoubler ma 3e, je me suis inscrit au
                 <b>coding club d'epitech</b>. Ce fut une joie pour moi, à tel
                 point que j'y suis retourné mainte et mainte fois, à tel point
-                que je connaissais tout les sujets. Les Assets ( surveillant )
-                m'ont fait faire un test de 1ére année que j'ai réussi ( à
-                moitier: j'ai réussi les 2/3 de l'exercice). Grace à cela j'ai
-                pu apprendre plusieur nouveau languge comme le <b>ruby</b>, le{" "}
-                <b>lua</b> ou encore le <b>C</b>.
+                que je connaissais tous les sujets. Les Assets ( surveillant )
+                m'ont fait faire un test de première année que j'ai réussi ( à
+                moitié: j'ai réussi les 2/3 de l'exercice). Grâce à cela j'ai
+                pu apprendre plusieurs nouveaux languges comme le <b>Ruby</b>, le{" "}
+                <b>Lua</b> ou encore le <b>C</b>.
               </p>
             </div>
           </div>
@@ -84,14 +84,14 @@ function About() {
             <div className={styles.content}>
               <h2>2017</h2>
               <p>
-                2017, au vacance d'été, je me suis intéréssé de près à{" "}
+                2017, aux vacances d'été, je me suis intéressé de prés à{" "}
                 <b>python</b>, sachant que j'allais en faire au cours de
                 l'année. Au début de l'année, je commençais la maîtrise de base
-                de <b>python</b> ( les fonctions, les variables, ect.. ). Arrivé
-                en millieu d'année, je commençais les cours de <b>python</b>{" "}
+                de <b>python</b> ( les fonctions, les variables, etc.. ). Arrivé
+                en milieu d'année, je commençais les cours de <b>python</b>{" "}
                 avec des calculs. C'est aussi cette que je fus la connaissance
                 d'
-                <b>epitech</b>.
+                <b>Epitech</b>.
               </p>
             </div>
           </div>
@@ -102,10 +102,10 @@ function About() {
                 2016 était pour moi, le commencement d'une nouvelle passion,
                 l'informatique. C'est pour la première fois que j'utilisais
                 Scratch. J'ai de suite bien aimé et ai vite compris comment cela
-                fonctionnais. Je suis donc passé directement au projet final
+                fonctionnait. Je suis donc passé directement au projet final
                 visé qui était un{" "}
                 <a href="https://www.google.com/fbx?fbx=snake_arcade">
-                  snake <img src="/accueil/lien.png" />
+                  Snake <img src="/accueil/lien.png" />
                 </a>
               </p>
             </div>

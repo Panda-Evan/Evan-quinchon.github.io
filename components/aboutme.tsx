@@ -10,9 +10,9 @@ function Aboutme() {
         à l’ETNA.
         <br />
         <br />
-        Je m'intéresse à la création de site et particulièrement sur le côté
+        Je m'intéresse à la création de sites et particulièrement sur le côté
         esthétique de celui-ci. J'ai aussi un petit intérêt sur les jeux vidéo,
-        notamment les RPGs et les jeux d'évasions. Je cherche à me perfectioner
+        notamment les RPGs et les jeux d'évasions. Je cherche à me perfectionner
         toujours plus.
       </p>
       <a href="/about">
