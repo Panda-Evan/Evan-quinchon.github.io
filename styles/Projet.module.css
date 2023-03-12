@@ -46,6 +46,14 @@
   text-align: center;
 }
 
+.sous_titre {
+  padding: 20px;
+  font-weight: 100;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0 10%;
+}
+
 .image_theForge {
   height: auto;
   max-height: 700px;

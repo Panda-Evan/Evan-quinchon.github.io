@@ -15,6 +15,12 @@ const slides = [
     lien: "/hyrule",
     color: "rgb(95, 16, 16)",
   },
+  {
+    title: "Code Camp\n Mission Emargement",
+    image: "/projet/CC Fluter/emar.jpg",
+    lien: "/emar",
+    color: "#a7b8dc",
+  },
 ];
 
 // function to retrieve the mouse position and animate the image
