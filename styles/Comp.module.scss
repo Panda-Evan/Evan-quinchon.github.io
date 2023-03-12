@@ -806,6 +806,56 @@
 	}
 }
 
+.badge_bleu_ciel {
+	@include position;
+	background: linear-gradient(to bottom right, #00aeff 0%, #007afc 100%);
+	color: #7f3c82;
+
+	&:before,
+	&:after {
+		position: absolute;
+		width: inherit;
+		height: inherit;
+		border-radius: inherit;
+		background: inherit;
+		content: "";
+		@include margin-auto;
+	}
+
+	&:before {
+		transform: rotate(60deg);
+	}
+
+	&:after {
+		transform: rotate(-60deg);
+	}
+
+	&:hover {
+		@include rotate;
+	}
+
+	.circle {
+		justify-content: center;
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		background: #fff;
+		z-index: 10;
+		border-radius: 50%;
+		@include margin-auto;
+
+		img {
+			margin-top: 5px;
+			width: 35px;
+		}
+	}
+
+	.ribbon {
+		@include ribbon;
+		background: linear-gradient(to bottom right, #555 0%, #333 100%);
+	}
+}
+
 @keyframes rotation {
 	0% {
 		transform: rotate(0) scale(1);

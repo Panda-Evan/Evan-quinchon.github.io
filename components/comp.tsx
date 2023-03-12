@@ -83,6 +83,12 @@ function Comp() {
                     <div className={styles.ribbon} >Javascript</div>
                   </div>
                 </a>
+                <a target="_blank" href="https://flutter.dev/" className={styles.badge_bleu_ciel}>
+                  <div className={styles.circle}>
+                    <img src="/logo_prog/web/flutter.png"/>
+                    <div className={styles.ribbon} >Flutter</div>
+                  </div>
+                </a>
               </div>
             )}
             {prog && ( // display function prog
