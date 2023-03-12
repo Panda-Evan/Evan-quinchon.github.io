@@ -127,6 +127,12 @@ function Comp() {
                     <div className={styles.ribbon} >Git</div>
                   </div>
                 </a>
+                <a target="_blank" href="https://git-scm.com/" className={styles.badge_green}>
+                  <div className={styles.circle}>
+                    <img src="/logo_prog/other/figma.png"/>
+                    <div className={styles.ribbon} >Figma</div>
+                  </div>
+                </a>
               </div>
             )}
           </div>

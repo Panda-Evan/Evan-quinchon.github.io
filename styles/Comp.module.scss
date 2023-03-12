@@ -107,7 +107,28 @@
 }
 
 /*Modified all badge*/
-@mixin margin-auto {
+@mixin margin-auto-position {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background: inherit;
+	content: "";
+}
+
+@mixin circle {
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	background: #fff;
+	z-index: 10;
+	border-radius: 50%;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -147,51 +168,30 @@
 	animation: rotation 1.3s;
 }
 
-/* All Web Badge with responsive */
 .badge_yellow {
 	@include position;
 	background: linear-gradient(to bottom right, #ffeb3b 0%, #fbc02d 100%);
 	color: #ffb300;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 65px;
 		}
 	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -202,96 +202,26 @@
 	@include position;
 	background: linear-gradient(to bottom right, #0d0d0d 0%, #2c2c2b 100%);
 	color: #626160;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 60px;
 		}
 	}
-
-	.ribbon {
-		@include ribbon;
-		background: linear-gradient(to bottom right, #555 0%, #333 100%);
-	}
-}
-
-.badge_blue_light {
-	@include position;
-	background: linear-gradient(to bottom right, #34b3cc 0%, #196e85 100%);
-	color: #0c5ac8;
-
-	&:before,
-	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
-	}
-
-	&:before {
-		transform: rotate(60deg);
-	}
-
-	&:after {
-		transform: rotate(-60deg);
-	}
-
-	&:hover {
-		@include rotate;
-	}
-
-	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
-		img {
-			margin-top: 5px;
-			width: 40px;
-		}
-	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -302,46 +232,26 @@
 	@include position;
 	background: linear-gradient(to bottom right, #0b2493 0%, #2359cd 100%);
 	color: #264dba;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -352,149 +262,56 @@
 	@include position;
 	background: linear-gradient(to bottom right, #a53496 0%, #c758d1 100%);
 	color: #7f3c82;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 55px;
 		}
 	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
 	}
 }
-
-
-/* All Prog Badge with responsive */
 
 .badge_purple {
 	@include position;
 	background: linear-gradient(to bottom right, #a402fb 0%, #330353 100%);
 	color: #7f3c82;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 40px;
 		}
 	}
-
-	.ribbon {
-		@include ribbon;
-		background: linear-gradient(to bottom right, #555 0%, #333 100%);
-	}
-}
-
-.badge_black {
-	@include position;
-	background: linear-gradient(to bottom right, #0d0d0d 0%, #2c2c2b 100%);
-	color: #626160;
-
-	&:before,
-	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
-	}
-
-	&:before {
-		transform: rotate(60deg);
-	}
-
-	&:after {
-		transform: rotate(-60deg);
-	}
-
-	&:hover {
-		@include rotate;
-	}
-
-	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
-		img {
-			margin-top: 5px;
-			width: 60px;
-		}
-	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -505,149 +322,26 @@
 	@include position;
 	background: linear-gradient(to bottom right, #34b3cc 0%, #196e85 100%);
 	color: #0c5ac8;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 40px;
 		}
 	}
-
-	.ribbon {
-		@include ribbon;
-		background: linear-gradient(to bottom right, #555 0%, #333 100%);
-	}
-}
-
-.badge_pink {
-	@include position;
-	background: linear-gradient(to bottom right, #a53496 0%, #c758d1 100%);
-	color: #7f3c82;
-
-	&:before,
-	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
-	}
-
-	&:before {
-		transform: rotate(60deg);
-	}
-
-	&:after {
-		transform: rotate(-60deg);
-	}
-
-	&:hover {
-		@include rotate;
-	}
-
-	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
-		img {
-			margin-top: 5px;
-			width: 55px;
-		}
-	}
-
-	.ribbon {
-		@include ribbon;
-		background: linear-gradient(to bottom right, #555 0%, #333 100%);
-	}
-}
-
-
-/* All Prog Badge with responsive */
-
-.badge_purple {
-	@include position;
-	background: linear-gradient(to bottom right, #a402fb 0%, #330353 100%);
-	color: #7f3c82;
-
-	&:before,
-	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
-	}
-
-	&:before {
-		transform: rotate(60deg);
-	}
-
-	&:after {
-		transform: rotate(-60deg);
-	}
-
-	&:hover {
-		@include rotate;
-	}
-
-	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
-		img {
-			margin-top: 5px;
-			width: 40px;
-		}
-	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -658,46 +352,26 @@
 	@include position;
 	background: linear-gradient(to bottom right, #800909 0%, #ff0303 100%);
 	color: #7f3c82;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -708,98 +382,56 @@
 	@include position;
 	background: linear-gradient(to bottom right, #6939cb 0%, #0c0586 100%);
 	color: #7f3c82;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 40px;
 		}
 	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
 	}
 }
 
-/* All other Badge with responsive */
-
 .badge_orange {
 	@include position;
 	background: linear-gradient(to bottom right, #ff8400 0%, #ee420d 100%);
 	color: #7f3c82;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
-
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -810,46 +442,56 @@
 	@include position;
 	background: linear-gradient(to bottom right, #00aeff 0%, #007afc 100%);
 	color: #7f3c82;
-
 	&:before,
 	&:after {
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		background: inherit;
-		content: "";
-		@include margin-auto;
+		@include margin-auto-position;
 	}
-
 	&:before {
 		transform: rotate(60deg);
 	}
-
 	&:after {
 		transform: rotate(-60deg);
 	}
-
 	&:hover {
 		@include rotate;
 	}
-
 	.circle {
-		justify-content: center;
-		width: 80px;
-		height: 80px;
-		position: absolute;
-		background: #fff;
-		z-index: 10;
-		border-radius: 50%;
-		@include margin-auto;
-
+		@include circle;
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
+	.ribbon {
+		@include ribbon;
+		background: linear-gradient(to bottom right, #555 0%, #333 100%);
+	}
+}
 
+.badge_green {
+	@include position;
+	background: linear-gradient(to bottom right, #006540 0%, #00af2f 100%);
+	color: #7f3c82;
+	&:before,
+	&:after {
+		@include margin-auto-position;
+	}
+	&:before {
+		transform: rotate(60deg);
+	}
+	&:after {
+		transform: rotate(-60deg);
+	}
+	&:hover {
+		@include rotate;
+	}
+	.circle {
+		@include circle;
+		img {
+			margin-top: 5px;
+			width: 25px;
+		}
+	}
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -860,11 +502,9 @@
 	0% {
 		transform: rotate(0) scale(1);
 	}
-
 	50% {
 		transform: rotate(180deg) scale(1.2);
 	}
-
 	100% {
 		transform: rotate(360deg) scale(1);
 	}
@@ -874,7 +514,6 @@
 	from {
 		opacity: 0;
 	}
-
 	to {
 		opacity: 1;
 	}
@@ -887,26 +526,22 @@
 			text-align: center;
 		}
 	}
-
 	.div text {
 		margin: 0;
 		font-size: 2rem;
 	}
-
 	.div_button {
 		.button {
-			font-size: 0.8rem; //
-			display:grid;
+			font-size: 0.8rem;
+			display: grid;
 			padding: 5px 10px;
-	
 			&:hover:after {
 				width: 20%;
 				left: 50%;
 			}
 		}
-	
 		.active {
-			font-size: 0.8rem; //
+			font-size: 0.8rem;
 			padding: 5px 10px;
 		}
 	}
