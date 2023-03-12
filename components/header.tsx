@@ -7,10 +7,10 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { label: 'Mes Projets', url: '#project' },
-  { label: 'Compétences', url: '#competence' },
-  { label: 'A propos', url: '#about' },
-  { label: 'Contactez Moi', url: '#contact' },
+  { label: 'Mes Projets', url: 'https://panda-evan.github.io/#project' },
+  { label: 'Compétences', url: 'https://panda-evan.github.io/#competence' },
+  { label: 'A propos', url: 'https://panda-evan.github.io/#about' },
+  { label: 'Contactez Moi', url: 'https://panda-evan.github.io/#contact' },
 ];
 
 // header of home
