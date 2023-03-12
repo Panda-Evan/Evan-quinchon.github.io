@@ -118,6 +118,7 @@ export default function Comp() {
           </div>
         </nav>
       </div>
+      <img className={styles.svg} src="/wave/wave2.svg" />
     </div>
   );
 }
