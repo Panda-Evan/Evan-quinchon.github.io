@@ -1,10 +1,31 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/Header.module.css";
 
+interface MenuItem {
+  label: string;
+  url: string;
+}
+
+const menuItems: MenuItem[] = [
+  { label: 'Mes Projets', url: '#project' },
+  { label: 'Compétences', url: '#competence' },
+  { label: 'A propos', url: '#about' },
+  { label: 'Contactez Moi', url: '#contact' },
+];
+
 // header of home
 function Header() {
   // function to scroll to the top
   const [atTop, setAtTop] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsOpen(!isOpen);
+  }
+
+  function closeMenu() {
+    setIsOpen(false);
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,23 +44,27 @@ function Header() {
 
   return (
     <header>
-      <input className={styles.navbar} type="checkbox" id="navbar" />
-      <label htmlFor="navbar"></label>
+      <input
+        type="checkbox"
+        id="navbar"
+        checked={isOpen}
+        onChange={toggleMenu}
+        className={styles.navbar}
+      />
+      <label htmlFor="navbar" />
       <nav className={styles.nav}>
         <ul>
-          <li>
-            <a href="https://panda-evan.github.io/#project">Mes Projets</a>
-          </li>
-          <li>
-            <a href="https://panda-evan.github.io/#competence">Compétences</a>
-          </li>
-          <li>
-            <a href="https://panda-evan.github.io/#about">A propos</a>
-          </li>
-          <li>
-            <a href="https://panda-evan.github.io/#contact">Contactez Moi</a>
-          </li>
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <a href={item.url} onClick={closeMenu}>
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
+        <a href="#" className="close" onClick={closeMenu}>
+          &times;
+        </a>
       </nav>
       <div>
         {!atTop && ( // appears when the scroll bar is not fully
