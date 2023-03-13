@@ -15,8 +15,7 @@ function HyrulePage() {
       <main className={styles.main}>
         <h1 className={styles.titre}>Hyrule Castle</h1>
         <h3 className={styles.sous_titre}>
-          Le but était de faire un petit jeu à la Zelda en Typescript avec des
-          fichiers Json. Temps: 2 semaines
+        Le but était de faire un petit jeu à la Zelda en Typescript avec des fichiers Json. Temps: 2 semaines
         </h3>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
@@ -41,10 +40,10 @@ function HyrulePage() {
             <p>
               Lorsque l'on choisit new game, on peut choisir le nombre d'étages
               à parcourir avant la fin du jeu. On choisit aussi la difficulté
-              qui augmente la vie et la force des ennemies. On en vient donc à
-              notre image qui est le commencement du jeu. Le héros est choisi
-              aléatoirement tout comme les ennemies. Tous les 10 combats, le
-              héros affrontera un boss.
+              qui augmente la vie et la force des ennemies. On en
+              vient donc à notre image qui est le commencement du jeu. Le héros
+              est choisi aléatoirement tout comme les ennemies. Tous les 10
+              combats, le héros affrontera un boss.
             </p>
           </div>
           <div className={styles.right}>
