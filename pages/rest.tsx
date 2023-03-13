@@ -13,44 +13,42 @@ function HyrulePage() {
       </Head>
       <Header />
       <main className={styles.main}>
-        <h1 className={styles.titre}>Hyrule Castle</h1>
+        <h1 className={styles.titre}>Rest Countries</h1>
         <h3 className={styles.sous_titre}>
-          Le but était de faire un petit jeu à la Zelda en Typescript avec des
-          fichiers Json. Temps: 2 semaines
+          Le but était de créer une appli en Kotlin qui récupérait depuis une
+          Database des infos sur de nombreux pays et de les utiliser. Temps: 2
+          semaines
         </h3>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
             <img
               className={styles.image_theForge}
-              src="/projet/hyrule/zelda_accueil.png"
+              src="/projet/rest/pays_list.jpg"
             />
           </div>
           <div className={styles.right}>
-            <h3>Page de Lancement du Jeu</h3>
+            <h3>Page de selection</h3>
             <p>
-              Le titre est fait grâce à une fonction typescript qui transforme
-              le texte en ascii suivant des paramètres. Le menu est fait de
-              manière à choisir en entrant 1 ou 2 suivants ce qu'on souhaite
-              faire.
+              Sur cette page sont affichés tous les pays de la Database, ils
+              sont cliquables pour nous emmener sur la deuxième page.
             </p>
           </div>
         </div>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
-            <h3>Page de Jeu</h3>
+            <h3>Page d'information</h3>
             <p>
-              Lorsque l'on choisit new game, on peut choisir le nombre d'étages
-              à parcourir avant la fin du jeu. On choisit aussi la difficulté
-              qui augmente la vie et la force des ennemies. On en vient donc à
-              notre image qui est le commencement du jeu. Le héros est choisi
-              aléatoirement tout comme les ennemies. Tous les 10 combats, le
-              héros affrontera un boss.
+              Sur cette page sont affichées plusieurs informations du pays
+              sélectionné. Il faut savoir que si l'information n'existe pas ,
+              l'information ne sera pas affichée. En cliquant sur "Go to the
+              maps", cela ouvre une page Google Maps avec la localisation du
+              pays.
             </p>
           </div>
           <div className={styles.right}>
             <img
               className={styles.image_theForge}
-              src="/projet/hyrule/zelda_game.png"
+              src="/projet/rest/pays_info.jpg"
             />
           </div>
         </div>

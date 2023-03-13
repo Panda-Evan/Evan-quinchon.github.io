@@ -14,6 +14,11 @@ function TheForgePage() {
       <Header />
       <main className={styles.main}>
         <h1 className={styles.titre}>Hyrule Castle</h1>
+        <h3 className={styles.sous_titre}>
+          Le but était de faire un site d'e-commerce avec la possibilité
+          d'afficher des informations depuis une Database, c'est aussi la
+          première fois qu'on utilisait NextJS et ReactJS. Temps: 2 semaines
+        </h3>
         <div className={styles.project_wrapper}>
           <div className={styles.left}>
             <img
@@ -35,8 +40,9 @@ function TheForgePage() {
           <div className={styles.left}>
             <h3>Page du shop</h3>
             <p>
-              La page du shop est reliée à une database permettant de récupérer les articles mis en vente sur le site rangé par catégorie.
-              Les 4 images du haut permettent de se déplacer suivant le thème voulu.
+              La page du shop est reliée à une database permettant de récupérer
+              les articles mis en vente sur le site rangé par catégorie. Les 4
+              images du haut permettent de se déplacer suivant le thème voulu.
             </p>
           </div>
           <div className={styles.right}>
@@ -56,7 +62,8 @@ function TheForgePage() {
           <div className={styles.right}>
             <h3>Page de payement</h3>
             <p>
-              La page permet de récupérer les articles commandés dans le shop et récupère les données.
+              La page permet de récupérer les articles commandés dans le shop et
+              récupère les données.
             </p>
           </div>
         </div>
@@ -64,7 +71,8 @@ function TheForgePage() {
           <div className={styles.left}>
             <h3>Page de connexion</h3>
             <p>
-              La page permet de se connecter ou de se créer un compte suivant si l'on possède un compte ou non.
+              La page permet de se connecter ou de se créer un compte suivant si
+              l'on possède un compte ou non.
             </p>
           </div>
           <div className={styles.right}>

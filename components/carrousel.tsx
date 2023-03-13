@@ -21,6 +21,12 @@ const slides = [
     lien: "/emar",
     color: "#a7b8dc",
   },
+  {
+    title: "Rest Countries",
+    image: "/projet/rest/rest.png",
+    lien: "/rest",
+    color: "#d6efff",
+  },
 ];
 
 // function to retrieve the mouse position and animate the image
