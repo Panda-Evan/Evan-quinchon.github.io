@@ -33,7 +33,7 @@ export default function Comp() {
           badgeClass: styles.badge_pink,
         },
         {
-          url:"https://developer.mozilla.org/fr/docs/Web/JavaScript",
+          url:"https://www.javascript.com/",
           src: "/logo_prog/web/js.png",
           label: "Javascript",
           badgeClass: styles.badge_yellow,
