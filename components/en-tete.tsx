@@ -23,7 +23,7 @@ function En_tete() {
         <div>
           <button className={styles.download}>
             <span>
-              <a href="/accueil/EVAN QUINCHON CV.pdf" download>
+              <a href="/accueil/CV_QUINCHON_EVAN.pdf" download>
                 <img src="/accueil/download.png" />
                 Download CV
               </a>
