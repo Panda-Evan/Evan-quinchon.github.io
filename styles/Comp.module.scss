@@ -498,6 +498,36 @@
 	}
 }
 
+.badge_green_light {
+	@include position;
+	background: linear-gradient(to bottom right, #49be44 0%, #027f26 100%);
+	color: #7f3c82;
+	&:before,
+	&:after {
+		@include margin-auto-position;
+	}
+	&:before {
+		transform: rotate(60deg);
+	}
+	&:after {
+		transform: rotate(-60deg);
+	}
+	&:hover {
+		@include rotate;
+	}
+	.circle {
+		@include circle;
+		img {
+			margin-top: 5px;
+			width: 25px;
+		}
+	}
+	.ribbon {
+		@include ribbon;
+		background: linear-gradient(to bottom right, #555 0%, #333 100%);
+	}
+}
+
 @keyframes rotation {
 	0% {
 		transform: rotate(0) scale(1);

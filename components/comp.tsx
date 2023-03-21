@@ -9,6 +9,12 @@ export default function Comp() {
       label: "Developement Web",
       content: [
         {
+          url:"https://developer.mozilla.org/fr/docs/Web/HTML",
+          src: "/logo_prog/web/html.png",
+          label: "HTML",
+          badgeClass: styles.badge_orange,
+        },
+        {
           url:"https://nextjs.org/",
           src: "/logo_prog/web/nextjs.png",
           label: "NextJS",
@@ -79,16 +85,22 @@ export default function Comp() {
       label: "Autres",
       content: [
         {
+          url:"https://www.figma.com/fr/",
+          src: "/logo_prog/other/figma.png",
+          label: "Figma",
+          badgeClass: styles.badge_green,
+        },
+        {
           url:"https://git-scm.com/",
           src: "/logo_prog/other/git.png",
           label: "Git",
           badgeClass: styles.badge_orange,
         },
         {
-          url:"https://www.figma.com/fr/",
-          src: "/logo_prog/other/figma.png",
-          label: "Figma",
-          badgeClass: styles.badge_green,
+          url:"https://developer.android.com/studio",
+          src: "/logo_prog/other/android.png",
+          label: "Android",
+          badgeClass: styles.badge_green_light,
         },
       ],
     },
