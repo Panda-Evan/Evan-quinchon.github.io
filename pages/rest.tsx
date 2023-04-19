@@ -4,7 +4,7 @@ import Header from "../components/header";
 import styles from "../styles/Projet.module.css";
 
 // page project hyrule
-function HyrulePage() {
+function Rest() {
   return (
     <>
       <Head>
@@ -58,4 +58,4 @@ function HyrulePage() {
   );
 }
 
-export default HyrulePage;
+export default Rest;

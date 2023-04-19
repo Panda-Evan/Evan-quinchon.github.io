@@ -27,6 +27,12 @@ const slides = [
     lien: "/rest",
     color: "#d6efff",
   },
+  {
+    title: "Mission: Escape Lab",
+    image: "/projet/CC unreal/Laboratory.png",
+    lien: "/CCunreal",
+    color: "#d6efff",
+  },
 ];
 
 // function to retrieve the mouse position and animate the image
