@@ -15,7 +15,7 @@
 	}
 }
 
-.div text {
+.div h1 {
 	margin-right: 200px;
 	font-size: 3rem;
 }
@@ -556,19 +556,15 @@
 			text-align: center;
 		}
 	}
-	.div text {
+	.div h1 {
 		margin: 0;
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	.div_button {
 		.button {
 			font-size: 0.8rem;
 			display: grid;
 			padding: 5px 10px;
-			&:hover:after {
-				width: 20%;
-				left: 50%;
-			}
 		}
 		.active {
 			font-size: 0.8rem;

@@ -17,17 +17,32 @@ function About() {
           <text>A Propos</text>
         </div>
         <div className={styles.timeline}>
+          <div className={styles.container_right}>
+            <div className={styles.content}>
+              <h2>2023</h2>
+              <p>
+                2023, toujours dans la continuité de mon cursus à l'
+                <a href="https://etna.io/" target="_blank">
+                  <b>ETNA</b> <img src="/accueil/lien.png" />
+                </a>
+                , j'ai trouvé une <b>Alternance</b> dans l'entreprise{" "}
+                <a href="https://cliqdigital.com/" target="_blank">
+                  <b>CliqDigital</b> <img src="/accueil/lien.png" />
+                </a>
+                . J'y apprends le développement front-End dans sa globalité.
+              </p>
+            </div>
+          </div>
           <div className={styles.container_left}>
             <div className={styles.content}>
               <h2>2022</h2>
               <p>
                 2022, j'ai été accepté à l'
-                <a href="https://etna.io/">
+                <a href="https://etna.io/" target="_blank">
                   <b>ETNA</b> <img src="/accueil/lien.png" />
                 </a>
-                . Actuellement je me passionne sur le <b>dev front end</b>et les{" "}
-                <b>jeux vidéos</b>. Mon but final serait
-                de devenir{" "}
+                . Je me passionne sur le <b>dev front end</b>et les{" "}
+                <b>jeux vidéos</b>. Mon but final serait de devenir{" "}
                 <b>chef de projet tout en continuant de programmer</b>.
               </p>
             </div>
@@ -53,11 +68,11 @@ function About() {
                 toujours plus sur le <b>python</b>. C'est aussi à ce moment que
                 j'eus envie de commencer à <b>créer un jeu</b>. J'ai commencé
                 avec des <b>petits jeux</b> comme{" "}
-                <a href="https://www.google.com/fbx?fbx=snake_arcade">
+                <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank">
                   Snake <img src="/accueil/lien.png" />
                 </a>
                 , ou le{" "}
-                <a href="http://www.mathsaharry.com/fort/fort_harry.htm">
+                <a href="http://www.mathsaharry.com/fort/fort_harry.htm" target="_blank">
                   jeu des bâtons <img src="/accueil/lien.png" />
                 </a>
                 .
@@ -73,8 +88,8 @@ function About() {
                 point que j'y suis retourné mainte et mainte fois, à tel point
                 que je connaissais tous les sujets. Les Assets ( surveillant )
                 m'ont fait faire un test de première année que j'ai réussi ( à
-                moitié: j'ai réussi les 2/3 de l'exercice). Grâce à cela j'ai
-                pu apprendre plusieurs nouveaux languges comme le <b>Ruby</b>, le{" "}
+                moitié: j'ai réussi les 2/3 de l'exercice). Grâce à cela j'ai pu
+                apprendre plusieurs nouveaux languges comme le <b>Ruby</b>, le{" "}
                 <b>Lua</b> ou encore le <b>C</b>.
               </p>
             </div>
@@ -87,9 +102,8 @@ function About() {
                 <b>python</b>, sachant que j'allais en faire au cours de
                 l'année. Au début de l'année, je commençais la maîtrise de base
                 de <b>python</b> ( les fonctions, les variables, etc.. ). Arrivé
-                en milieu d'année, je commençais les cours de <b>python</b>{" "}
-                avec des calculs. C'est aussi cette que je fus la connaissance
-                d'
+                en milieu d'année, je commençais les cours de <b>python</b> avec
+                des calculs. C'est aussi cette que je fus la connaissance d'
                 <b>Epitech</b>.
               </p>
             </div>
@@ -103,7 +117,7 @@ function About() {
                 Scratch. J'ai de suite bien aimé et ai vite compris comment cela
                 fonctionnait. Je suis donc passé directement au projet final
                 visé qui était un{" "}
-                <a href="https://www.google.com/fbx?fbx=snake_arcade">
+                <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank">
                   Snake <img src="/accueil/lien.png" />
                 </a>
               </p>

@@ -8,10 +8,10 @@ function En_tete() {
         <img src="/accueil/photo.jpg" alt="photo de profil" />
       </div>
       <div className={styles.div_right}>
-        <text>
+        <h1>
           Bonjour ! Je suis <br />
           <strong>Evan Quinchon</strong>
-        </text>
+        </h1>
         <br />
         <div className={styles.intro}>
           <p>

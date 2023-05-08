@@ -4,7 +4,7 @@ import styles from "../styles/Aboutme.module.css";
 function Aboutme() {
   return (
     <div className={styles.div} id="about">
-      <text>A propos</text>
+      <h1>A propos</h1>
       <p>
         Développeur passionné de Front End et de jeux vidéo, je suis actuellement en 1ère année
         à l’ETNA.

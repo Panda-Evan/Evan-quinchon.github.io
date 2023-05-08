@@ -18,7 +18,7 @@
   float: left;
 }
 
-.div_right text {
+.div_right h1 {
   font-size: 4rem;
   font-family: "CanelaDeck", serif ;
 }
@@ -47,7 +47,7 @@
   to {opacity: 100%; }
 }
 
-.div_right text {
+.div_right h1 {
   animation-name: opa;
   animation-duration: 3s;  
   animation-fill-mode:both;
@@ -177,7 +177,7 @@
     margin-bottom: 50px;
   }
 
-  .div_right text {
+  .div_right h1 {
     font-size: 2rem;
     font-family: "CanelaDeck", serif ;
   }

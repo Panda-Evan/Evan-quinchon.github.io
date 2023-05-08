@@ -6,7 +6,7 @@ function Project() {
   return (
     <div className={styles.div} id="project">
       <div className={styles.text}>
-        <text>Mes Projets</text>
+        <h1>Mes Projets</h1>
       </div>
 
       <Carrousel />
