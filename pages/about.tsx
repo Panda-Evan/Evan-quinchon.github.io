@@ -68,11 +68,17 @@ function About() {
                 toujours plus sur le <b>python</b>. C'est aussi à ce moment que
                 j'eus envie de commencer à <b>créer un jeu</b>. J'ai commencé
                 avec des <b>petits jeux</b> comme{" "}
-                <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank">
+                <a
+                  href="https://www.google.com/fbx?fbx=snake_arcade"
+                  target="_blank"
+                >
                   Snake <img src="/accueil/lien.png" />
                 </a>
                 , ou le{" "}
-                <a href="http://www.mathsaharry.com/fort/fort_harry.htm" target="_blank">
+                <a
+                  href="http://www.mathsaharry.com/fort/fort_harry.htm"
+                  target="_blank"
+                >
                   jeu des bâtons <img src="/accueil/lien.png" />
                 </a>
                 .
@@ -84,7 +90,7 @@ function About() {
               <h2>2018</h2>
               <p>
                 Après avoir été forcé de redoubler ma 3e, je me suis inscrit au
-                <b>coding club d'epitech</b>. Ce fut une joie pour moi, à tel
+                <b> coding club d'epitech</b>. Ce fut une joie pour moi, à tel
                 point que j'y suis retourné mainte et mainte fois, à tel point
                 que je connaissais tous les sujets. Les Assets ( surveillant )
                 m'ont fait faire un test de première année que j'ai réussi ( à
@@ -117,7 +123,10 @@ function About() {
                 Scratch. J'ai de suite bien aimé et ai vite compris comment cela
                 fonctionnait. Je suis donc passé directement au projet final
                 visé qui était un{" "}
-                <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank">
+                <a
+                  href="https://www.google.com/fbx?fbx=snake_arcade"
+                  target="_blank"
+                >
                   Snake <img src="/accueil/lien.png" />
                 </a>
               </p>
