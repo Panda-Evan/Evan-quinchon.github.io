@@ -1,6 +1,5 @@
 .div {
   text-align: center;
-  font-family: "AvenirNext", sans-serif ;
   background: rgb(245, 245, 245);
   padding-top: 50px;
 }
@@ -20,21 +19,20 @@
 
 .div_right h1 {
   font-size: 4rem;
-  font-family: "CanelaDeck", serif ;
 }
 
 .div_right .intro {
-    font-style: oblique;
-    opacity: 50%;
-    margin-top: 10px;
-    position: relative;
+  font-style: oblique;
+  opacity: 50%;
+  margin-top: 10px;
+  position: relative;
 }
 
 .div_left img {
-    border-radius: 200px;
-    box-shadow: 10px 10px 50px rgb(141, 140, 140);
-    height: 300px;
-    width: auto;
+  border-radius: 200px;
+  box-shadow: 10px 10px 50px rgb(141, 140, 140);
+  height: 300px;
+  width: auto;
 }
 
 .svg {
@@ -43,25 +41,30 @@
 }
 
 @keyframes opa {
-  from {opacity:0; top:0px;}
-  to {opacity: 100%; }
+  from {
+    opacity: 0;
+    top: 0px;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .div_right h1 {
   animation-name: opa;
-  animation-duration: 3s;  
-  animation-fill-mode:both;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
 
 .div_right .intro {
   animation-name: slidein;
-  animation-duration: 3s;  
+  animation-duration: 3s;
   animation-fill-mode: backwards;
 }
 
 .div_left {
   animation-name: opa;
-  animation-duration: 4s;  
+  animation-duration: 4s;
   animation-fill-mode: backwards;
 }
 
@@ -88,9 +91,8 @@
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -119,7 +121,7 @@
   content: "";
   right: 0;
   top: 0;
-   background: black;
+  background: black;
   transition: all 1.5s ease;
 }
 .download:before {
@@ -130,8 +132,8 @@
   width: 0%;
   height: 2px;
 }
-.download:hover{
-   background: transparent;
+.download:hover {
+  background: transparent;
   box-shadow: none;
 }
 .download:hover:before {
@@ -146,7 +148,7 @@
   content: "";
   left: 0;
   bottom: 0;
-   background: black;
+  background: black;
   transition: all 1.5s ease;
 }
 .download span:before {
@@ -165,8 +167,8 @@
 }
 
 @media screen and (max-width: 600px) {
-
-  .div_left, .div_right {
+  .div_left,
+  .div_right {
     width: 100%;
     margin: 0;
     float: none;
@@ -179,12 +181,11 @@
 
   .div_right h1 {
     font-size: 2rem;
-    font-family: "CanelaDeck", serif ;
   }
 
   .div_right .intro {
     font-size: 0.8rem;
     margin: 10px 40px;
     position: relative;
-}
+  }
 }

@@ -90,7 +90,6 @@
 	text-align: center;
 	margin-top: 50px;
 	font-size: 1.2rem;
-	font-family: 'Comfortaa', sans-serif;
 }
 
 .svg {
@@ -172,26 +171,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #ffeb3b 0%, #fbc02d 100%);
 	color: #ffb300;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 65px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -202,26 +208,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #0d0d0d 0%, #2c2c2b 100%);
 	color: #626160;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 60px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -232,26 +245,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #0b2493 0%, #2359cd 100%);
 	color: #264dba;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -262,26 +282,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #a53496 0%, #c758d1 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 55px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -292,26 +319,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #a402fb 0%, #330353 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 40px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -322,26 +356,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #34b3cc 0%, #196e85 100%);
 	color: #0c5ac8;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 40px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -352,26 +393,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #800909 0%, #ff0303 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -382,26 +430,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #6939cb 0%, #0c0586 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 40px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -412,26 +467,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #ff8400 0%, #ee420d 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -442,26 +504,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #00aeff 0%, #007afc 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 35px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -472,26 +541,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #006540 0%, #00af2f 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 25px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -502,26 +578,33 @@
 	@include position;
 	background: linear-gradient(to bottom right, #49be44 0%, #027f26 100%);
 	color: #7f3c82;
+
 	&:before,
 	&:after {
 		@include margin-auto-position;
 	}
+
 	&:before {
 		transform: rotate(60deg);
 	}
+
 	&:after {
 		transform: rotate(-60deg);
 	}
+
 	&:hover {
 		@include rotate;
 	}
+
 	.circle {
 		@include circle;
+
 		img {
 			margin-top: 5px;
 			width: 25px;
 		}
 	}
+
 	.ribbon {
 		@include ribbon;
 		background: linear-gradient(to bottom right, #555 0%, #333 100%);
@@ -532,9 +615,11 @@
 	0% {
 		transform: rotate(0) scale(1);
 	}
+
 	50% {
 		transform: rotate(180deg) scale(1.2);
 	}
+
 	100% {
 		transform: rotate(360deg) scale(1);
 	}
@@ -544,6 +629,7 @@
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -556,16 +642,19 @@
 			text-align: center;
 		}
 	}
+
 	.div h1 {
 		margin: 0;
 		font-size: 3rem;
 	}
+
 	.div_button {
 		.button {
 			font-size: 0.8rem;
 			display: grid;
 			padding: 5px 10px;
 		}
+
 		.active {
 			font-size: 0.8rem;
 			padding: 5px 10px;
